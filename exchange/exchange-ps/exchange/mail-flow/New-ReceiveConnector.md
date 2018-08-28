@@ -42,7 +42,7 @@ New-ReceiveConnector [-Name] <String> -Bindings <MultiValuedProperty> -RemoteIPR
  [-SizeEnabled <Disabled | Enabled | EnabledWithoutValue>] [-SuppressXAnonymousTls <$true | $false>]
  [-TarpitInterval <EnhancedTimeSpan>] [-TlsDomainCapabilities <MultiValuedProperty>] [-WhatIf]
  [-ServiceDiscoveryFqdn <Fqdn>] [-TlsCertificateName <SmtpX509Identifier>]
- [-TransportRole <None | Cafe | Mailbox | ClientAccess | UnifiedMessaging | HubTransport | Edge | All | Monitoring | CentralAdmin | CentralAdminDatabase | DomainController | WindowsDeploymentServer | ProvisionedServer | LanguagePacks | FrontendTransport | CafeArray | FfoWebService | OSP | ARR | ManagementFrontEnd | ManagementBackEnd | SCOM | CentralAdminFrontEnd | NAT | DHCP>]
+ [-TransportRole <HubTransport | Edge | FrontendTransport>]
  [-AuthTarpitInterval <EnhancedTimeSpan>] [-RejectReservedSecondLevelRecipientDomains <$true | $false>]
  [-RejectReservedTopLevelRecipientDomains <$true | $false>]
  [-RejectSingleLabelRecipientDomains <$true | $false>] [<CommonParameters>]
@@ -73,7 +73,7 @@ New-ReceiveConnector [-Name] <String> -Bindings <MultiValuedProperty> [-Internet
  [-SizeEnabled <Disabled | Enabled | EnabledWithoutValue>] [-SuppressXAnonymousTls <$true | $false>]
  [-TarpitInterval <EnhancedTimeSpan>] [-TlsDomainCapabilities <MultiValuedProperty>] [-WhatIf]
  [-ServiceDiscoveryFqdn <Fqdn>] [-TlsCertificateName <SmtpX509Identifier>]
- [-TransportRole <None | Cafe | Mailbox | ClientAccess | UnifiedMessaging | HubTransport | Edge | All | Monitoring | CentralAdmin | CentralAdminDatabase | DomainController | WindowsDeploymentServer | ProvisionedServer | LanguagePacks | FrontendTransport | CafeArray | FfoWebService | OSP | ARR | ManagementFrontEnd | ManagementBackEnd | SCOM | CentralAdminFrontEnd | NAT | DHCP>]
+ [-TransportRole <HubTransport | Edge | FrontendTransport>]
  [-AuthTarpitInterval <EnhancedTimeSpan>] [-RejectReservedSecondLevelRecipientDomains <$true | $false>]
  [-RejectReservedTopLevelRecipientDomains <$true | $false>]
  [-RejectSingleLabelRecipientDomains <$true | $false>] [<CommonParameters>]
@@ -104,7 +104,7 @@ New-ReceiveConnector [-Name] <String> -Bindings <MultiValuedProperty> [-Partner]
  [-SizeEnabled <Disabled | Enabled | EnabledWithoutValue>] [-SuppressXAnonymousTls <$true | $false>]
  [-TarpitInterval <EnhancedTimeSpan>] [-TlsDomainCapabilities <MultiValuedProperty>] [-WhatIf]
  [-ServiceDiscoveryFqdn <Fqdn>] [-TlsCertificateName <SmtpX509Identifier>]
- [-TransportRole <None | Cafe | Mailbox | ClientAccess | UnifiedMessaging | HubTransport | Edge | All | Monitoring | CentralAdmin | CentralAdminDatabase | DomainController | WindowsDeploymentServer | ProvisionedServer | LanguagePacks | FrontendTransport | CafeArray | FfoWebService | OSP | ARR | ManagementFrontEnd | ManagementBackEnd | SCOM | CentralAdminFrontEnd | NAT | DHCP>]
+ [-TransportRole <HubTransport | Edge | FrontendTransport>]
  [-AuthTarpitInterval <EnhancedTimeSpan>] [-RejectReservedSecondLevelRecipientDomains <$true | $false>]
  [-RejectReservedTopLevelRecipientDomains <$true | $false>]
  [-RejectSingleLabelRecipientDomains <$true | $false>] [<CommonParameters>]
@@ -135,7 +135,7 @@ New-ReceiveConnector [-Name] <String> [-Bindings <MultiValuedProperty>] [-Intern
  [-SizeEnabled <Disabled | Enabled | EnabledWithoutValue>] [-SuppressXAnonymousTls <$true | $false>]
  [-TarpitInterval <EnhancedTimeSpan>] [-TlsDomainCapabilities <MultiValuedProperty>] [-WhatIf]
  [-ServiceDiscoveryFqdn <Fqdn>] [-TlsCertificateName <SmtpX509Identifier>]
- [-TransportRole <None | Cafe | Mailbox | ClientAccess | UnifiedMessaging | HubTransport | Edge | All | Monitoring | CentralAdmin | CentralAdminDatabase | DomainController | WindowsDeploymentServer | ProvisionedServer | LanguagePacks | FrontendTransport | CafeArray | FfoWebService | OSP | ARR | ManagementFrontEnd | ManagementBackEnd | SCOM | CentralAdminFrontEnd | NAT | DHCP>]
+ [-TransportRole <HubTransport | Edge | FrontendTransport>]
  [-AuthTarpitInterval <EnhancedTimeSpan>] [-RejectReservedSecondLevelRecipientDomains <$true | $false>]
  [-RejectReservedTopLevelRecipientDomains <$true | $false>]
  [-RejectSingleLabelRecipientDomains <$true | $false>] [<CommonParameters>]
@@ -166,7 +166,7 @@ New-ReceiveConnector [-Name] <String> [-Bindings <MultiValuedProperty>] [-Client
  [-SizeEnabled <Disabled | Enabled | EnabledWithoutValue>] [-SuppressXAnonymousTls <$true | $false>]
  [-TarpitInterval <EnhancedTimeSpan>] [-TlsDomainCapabilities <MultiValuedProperty>] [-WhatIf]
  [-ServiceDiscoveryFqdn <Fqdn>] [-TlsCertificateName <SmtpX509Identifier>]
- [-TransportRole <None | Cafe | Mailbox | ClientAccess | UnifiedMessaging | HubTransport | Edge | All | Monitoring | CentralAdmin | CentralAdminDatabase | DomainController | WindowsDeploymentServer | ProvisionedServer | LanguagePacks | FrontendTransport | CafeArray | FfoWebService | OSP | ARR | ManagementFrontEnd | ManagementBackEnd | SCOM | CentralAdminFrontEnd | NAT | DHCP>]
+ [-TransportRole <HubTransport | Edge | FrontendTransport>]
  [-AuthTarpitInterval <EnhancedTimeSpan>] [-RejectReservedSecondLevelRecipientDomains <$true | $false>]
  [-RejectReservedTopLevelRecipientDomains <$true | $false>]
  [-RejectSingleLabelRecipientDomains <$true | $false>] [<CommonParameters>]
@@ -197,7 +197,7 @@ New-ReceiveConnector [-Name] <String> [-Bindings <MultiValuedProperty>] [-Remote
  [-SizeEnabled <Disabled | Enabled | EnabledWithoutValue>] [-SuppressXAnonymousTls <$true | $false>]
  [-TarpitInterval <EnhancedTimeSpan>] [-TlsDomainCapabilities <MultiValuedProperty>] [-WhatIf]
  [-ServiceDiscoveryFqdn <Fqdn>] [-TlsCertificateName <SmtpX509Identifier>]
- [-TransportRole <None | Cafe | Mailbox | ClientAccess | UnifiedMessaging | HubTransport | Edge | All | Monitoring | CentralAdmin | CentralAdminDatabase | DomainController | WindowsDeploymentServer | ProvisionedServer | LanguagePacks | FrontendTransport | CafeArray | FfoWebService | OSP | ARR | ManagementFrontEnd | ManagementBackEnd | SCOM | CentralAdminFrontEnd | NAT | DHCP>]
+ [-TransportRole <HubTransport | Edge | FrontendTransport>]
  [-AuthTarpitInterval <EnhancedTimeSpan>] [-RejectReservedSecondLevelRecipientDomains <$true | $false>]
  [-RejectReservedTopLevelRecipientDomains <$true | $false>]
  [-RejectSingleLabelRecipientDomains <$true | $false>] [<CommonParameters>]
@@ -1561,7 +1561,7 @@ The TransportRole parameter specifies the transport service on the Mailbox serve
 - HubTransport: The Transport service where Exchange server and proxied client SMTP connections occur.
 
 ```yaml
-Type: None | Cafe | Mailbox | ClientAccess | UnifiedMessaging | HubTransport | Edge | All | Monitoring | CentralAdmin | CentralAdminDatabase | DomainController | WindowsDeploymentServer | ProvisionedServer | LanguagePacks | FrontendTransport | CafeArray | FfoWebService | OSP | ARR | ManagementFrontEnd | ManagementBackEnd | SCOM | CentralAdminFrontEnd | NAT | DHCP
+Type: HubTransport | Edge | FrontendTransport
 Parameter Sets: (All)
 Aliases:
 Applicable: Exchange Server 2013, Exchange Server 2016
